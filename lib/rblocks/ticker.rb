@@ -2,10 +2,11 @@
 
 module RBlock
   #
-  # RBlock::Timer is a simple Go inspired timer. Usage
-  # timer = RBlock::Timer.new(10)
-  # timer.wait do
-  #   # ... someting once the time is up
+  # RBlock::Ticker is a simple Go inspired ticker. Usage
+  # ticker = RBlock::Ticker.new(0.5)
+  # 10.times do
+  #   ticker.wait # blocks for 1/2s
+  #   # do a thing every 1/2s
   # end
   #
   class Ticker
