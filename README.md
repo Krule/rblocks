@@ -23,7 +23,7 @@ Or install it yourself as:
 ### Timer
 
 ```ruby
-require "rblock/timer"
+require "rblocks/timer"
 
 timer = RBlock::Timer.new(30) # Set timer for 30s
 timer.wait # block until timer is done
