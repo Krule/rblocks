@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  🤖👮🏼:
+  rubocop:
     runs-on: ubuntu-latest
 
     strategy:
@@ -28,7 +28,7 @@ jobs:
     - name: Run Rubocop
       run: bundle exec rubocop -P
 
-  🧪:
+  minitest:
     runs-on: ubuntu-latest
 
     strategy:
