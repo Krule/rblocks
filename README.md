@@ -1,3 +1,5 @@
+[![Ruby](https://github.com/Krule/rblocks/actions/workflows/main.yml/badge.svg)](https://github.com/Krule/rblocks/actions/workflows/main.yml)
+
 # Ruby Blocks
 
 Ruby Blocks is a set of basic utilities built on top of the Ruby Ractor.
