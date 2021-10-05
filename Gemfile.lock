@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rblocks (1.0.0.1)
+    rblocks (1.0.1)
 
 GEM
   remote: https://rubygems.org/

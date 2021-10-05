@@ -50,6 +50,8 @@ ticker = RBlock::Ticker.new(1) # Tick once every second
 10.times do
   ticker.wait { puts "tick" } # output "tick" 10 times with a delay of 1s between each
 end
+
+ticker.stop!
 ```
 
 ## Development

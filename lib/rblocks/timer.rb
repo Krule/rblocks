@@ -15,7 +15,7 @@ module RBlock
     # @param duration [Numeric] duration in seconds
     #
     def initialize(duration)
-      @ractor = Ractor.new(duration, NAME) do |time|
+      @ractor = Ractor.new(duration, name: NAME) do |time|
         sleep(time)
 
         Ractor.yield(:done)

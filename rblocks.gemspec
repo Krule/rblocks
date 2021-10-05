@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "rblocks"
-  spec.version       = "1.0.0.1"
+  spec.version       = "1.0.1"
   spec.authors       = ["Armin Pasalic"]
   spec.email         = ["armin@pasalic.me"]
 
