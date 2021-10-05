@@ -12,7 +12,7 @@ module RBlock
     NAME = "r block ticker"
     #
     # Constructs and starts a ticker
-    # @param duration [Numeric] duration in seconds
+    # @param interval [Numeric] interval duration in seconds
     #
     def initialize(interval)
       @ractor = Ractor.new(interval) do |i|

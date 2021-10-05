@@ -3,12 +3,12 @@ name: Ruby
 on:
   push:
     branches:
-      - master
+      - main
 
-  pull_request:
+  workflow_dispatch:
 
 jobs:
-  👮🏼:
+  🤖👮🏼:
     runs-on: ubuntu-latest
 
     strategy:
@@ -18,12 +18,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
-    - name: Run the default task
+
+    - name: Run Rubocop
       run: bundle exec rubocop -P
 
   🧪:
@@ -38,10 +40,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Set up Ruby
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: ${{ matrix.ruby }}
         bundler-cache: true
-    - name: Run the default task
+
+    - name: Run unit tests
       run: bundle exec rake test
