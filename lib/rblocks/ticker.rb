@@ -36,7 +36,7 @@ module RBlock
       t = @ractor.take
       yield(self) if block_given?
       t
-    rescue Ractor::ClosedError => e
+    rescue Ractor::ClosedError
       raise ErrorTerminated, "ticker stopped"
     end
 
