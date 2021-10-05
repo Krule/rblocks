@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "r_blocks/ticker"
+require "rblocks/ticker"
 
 module RBlock
   class TickerTest < Minitest::Test

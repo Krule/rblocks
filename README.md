@@ -32,7 +32,7 @@ timer.wait # block until timer is done
 alternatively, one could pass a block:
 
 ```ruby
-require "r_blocks/timer"
+require "rblocks/timer"
 
 timer = RBlock::Timer.new(0.001) # Set timer for 1ms
 timer.wait { |_t| puts "done" } # execute block when timer is done
@@ -41,7 +41,7 @@ timer.wait { |_t| puts "done" } # execute block when timer is done
 ### Ticker
 
 ```ruby
-require "r_blocks/ticker"
+require "rblocks/ticker"
 
 ticker = RBlock::Ticker.new(1) # Tick once every second
 

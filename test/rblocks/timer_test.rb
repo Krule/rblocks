@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require "test_helper"
-require "r_blocks/timer"
+require "rblocks/timer"
 
 module RBlock
   class TimerTest < Minitest::Test
