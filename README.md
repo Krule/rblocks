@@ -1,6 +1,6 @@
 # Ruby Blocks
 
-Ruby Blocks, or `rblocks` is a set of utilities built on top of the Ruby Ractor.
+Ruby Blocks is a set of basic utilities built on top of the Ruby Ractor.
 
 ## Installation
 
@@ -20,7 +20,35 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Timer
+
+```ruby
+require "rblock/timer"
+
+timer = RBlock::Timer.new(30) # Set timer for 30s
+timer.wait # block until timer is done
+```
+
+alternatively, one could pass a block:
+
+```ruby
+require "r_blocks/timer"
+
+timer = RBlock::Timer.new(0.001) # Set timer for 1ms
+timer.wait { |_t| puts "done" } # execute block when timer is done
+```
+
+### Ticker
+
+```ruby
+require "r_blocks/ticker"
+
+ticker = RBlock::Ticker.new(1) # Tick once every second
+
+10.times do
+  ticker.wait { puts "tick" } # output "tick" 10 times with a delay of 1s between each
+end
+```
 
 ## Development
 
